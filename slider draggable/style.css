@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    background: rgb(41,41,41);
+}
+h1{
+    color: snow;
+    font-size: 50px;
+    text-align: center;
+    margin: 5vh 0 2vh 0;
+}
+p{
+    color: snow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/* SLIDER */
+.slider-container{
+    width: 80vw;
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 15vh auto;
+}
+.slider{
+    width: 200%; /* this depend on how many slides you want to show in the slider-container */
+    min-width: 2000px;
+    height: 85%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /*7 slides equal*/
+    gap: .5rem;
+    pointer-events: none;
+}
+.slider-img{
+    width: 80%;
+    max-width: 22rem;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0 2rem;
+    border-radius: .3rem;
+    background: rgba(255,255,255, .03);
+    box-shadow: 2px 2px 2px rgba(255,255,255, .4), 1px 5px 20px rgba(255,255,255, .3);
+    pointer-events: none;
+}
